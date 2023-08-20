@@ -6,8 +6,22 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    container: {
+        center: true,
+        padding: '1rem',
+    },
+    extend: {
+        colors: {
+            primary: "#E33F20",
+            secondary: "#CC2C0E",
+        },
+        fontFamily: {
+            futura: ["Futura", "sans-serif"],
+        }
+    },
   },
-  plugins: [],
+  plugins: [
+      require("flowbite/plugin"),
+  ],
 }
 
