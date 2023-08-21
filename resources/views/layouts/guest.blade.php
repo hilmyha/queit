@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'QueIT') }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -29,11 +29,6 @@
             <div class="h-screen w-full lg:w-1/2 bg-white flex items-center">
                 <div class="p-12 w-full lg:p-28">
                     {{ $slot }}
-
-                    {{-- <div class="inline-flex items-center justify-center w-full">
-                        <hr class="w-64 h-px my-8 bg-gray-200 border-0">
-                        <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 lg:-translate-x-3/4 bg-white left-1/2 lg:left-3/4">or</span>
-                    </div> --}}
                 </div>
             </div>
         </div>

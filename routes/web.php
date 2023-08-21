@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// This is the route that will be used to display the dashboard.
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
