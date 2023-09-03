@@ -25,3 +25,7 @@ Route::get('/dashboard', function () {
 Route::get('/dashboard/user', function () {
     return view('dashboard.user.index');
 })->name('dashboard-user');
+
+Route::get('/dashboard/departement', function () {
+    return view('dashboard.departement.index');
+})->name('dashboard-departement');
